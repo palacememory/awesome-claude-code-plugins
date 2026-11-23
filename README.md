@@ -254,7 +254,7 @@ Install or disable them dynamically with the `/plugin` command — enabling you 
 - [lightcms](./plugins/lightcms)
 - [deapi-media](./plugins/deapi-media)
 - [reporecall](https://github.com/proofofwork-agency/reporecall) - Local codebase memory for Claude Code. AST indexing (22 languages), call graphs, hybrid search. Injects context via hooks (~5ms). Also an MCP server.
-- [Palace](https://github.com/AncientiCe/palace-rs) - Local-first memory for Claude Code: one Rust binary, one SQLite file. Hooks inject cited memory into sessions (LongMemEval retrieval recall R@5 0.987). Not associated in any way with the popular mempalace python. Install with `palace install --client claude`.
+- [Palace](https://github.com/AncientiCe/palace-rs) - Local-first memory for Claude Code: one Rust binary and one SQLite file, local embeddings, hybrid BM25 plus vector search. Hooks inject cited memories into sessions (LongMemEval s_cleaned retrieval recall R@5 0.987). Not associated in any way with the popular mempalace python. Install: `/plugin marketplace add AncientiCe/palace-rs` then `/plugin install palace@palace-rs`.
 - [dotforge](https://github.com/luiseiman/dotforge) - Configuration factory for Claude Code — 17 skills, 7 agents, 15 stacks, audit scoring (0-10), practices pipeline.
 - [slack-message-formatter](./plugins/slack-message-formatter)
 - [cc-hud](https://github.com/WaterTian/cc-hud) — Compact single-line statusline: model name, context usage bar, active subagents, rate limits. Zero dependencies.
